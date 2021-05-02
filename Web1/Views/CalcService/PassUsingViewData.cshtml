@@ -1,0 +1,16 @@
+﻿@{ 
+    ViewData["Title"] = "PassUsingViewData";
+}
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <p><b>Rand Value First:@ViewData["ValueFirst"]</b></p>
+    <p><b>Rand Value Second:@ViewData["ValueSecond"]</b></p>
+    <p><b>Add:</b></p>
+    <p>@ViewData["ValueFirst"]+@ViewData["ValueSecond"]= @((int)@ViewData["ValueFirst"] + (int)@ViewData["ValueSecond"])</p>
+    <p><b>Sub:</b></p>
+    <p>@ViewData["ValueFirst"]-@ViewData["ValueSecond"] = @((int)@ViewData["ValueFirst"] - (int)@ViewData["ValueSecond"])</p>
+    <p><b>Mult:</b></p>
+    <p>@ViewData["ValueFirst"]*@ViewData["ValueSecond"] = @((int)@ViewData["ValueFirst"] * (int)@ViewData["ValueSecond"])</p>
+    <p><b>Div:</b></p>
+    <p>@ViewData["ValueFirst"]/@ViewData["ValueSecond"] = @((int)@ViewData["ValueFirst"] / (int)@ViewData["ValueSecond"])</p>
+</body>

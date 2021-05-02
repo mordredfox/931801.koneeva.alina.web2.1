@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "PassUsingViewBag";
+}
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <p><b>Rand Value First:@ViewBag.ValueFirst</b></p>
+    <p><b>Rand Value Second:@ViewBag.ValueSecond</b></p>
+    <p><b>Add:</b></p>
+    <p>@ViewBag.ValueFirst+@ViewBag.ValueSecond= @(@ViewBag.ValueFirst + @ViewBag.ValueSecond)</p>
+    <p><b>Sub:</b></p>
+    <p>@ViewBag.ValueFirst-@ViewBag.ValueSecond = @(@ViewBag.ValueFirst - @ViewBag.ValueSecond)</p>
+    <p><b>Mult:</b></p>
+    <p>@ViewBag.ValueFirst*@ViewBag.ValueSecond = @(@ViewBag.ValueFirst * @ViewBag.ValueSecond)</p>
+    <p><b>Div:</b></p>
+    <p>@ViewBag.ValueFirst/@ViewBag.ValueSecond = @(@ViewBag.ValueFirst / @ViewBag.ValueSecond)</p>
+</body>

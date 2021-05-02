@@ -1,0 +1,19 @@
+﻿@inject Web1.Services.ICalc SimpleCalc
+@{ 
+    ViewData["Title"] = "AccessServiceDirectly";
+    int a = @SimpleCalc.Randomize();
+    int b = @SimpleCalc.Randomize();
+}
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <p><b>Rand Value First:@a</b></p>
+    <p><b>Rand Value Second:@b</b></p>
+    <p><b>Add:</b></p>
+    <p>@a+@b = @(a+@b)</p>
+    <p><b>Sub:</b></p>
+    <p>@a-@b = @(@a - @b)</p>
+    <p><b>Mult:</b></p>
+    <p>@a*@b = @(@a * @b)</p>
+    <p><b>Div:</b></p>
+    <p>@a/@b = @(@a / @b)</p>
+</body>

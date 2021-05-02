@@ -1,0 +1,17 @@
+﻿@model Web1.Models.Numbers
+@{
+    ViewData["Title"] = "PassUsingModel";
+}
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <p><b>Rand Value First:@Model.ValueFirst</b></p>
+    <p><b>Rand Value Second:@Model.ValueSecond</b></p>
+    <p><b>Add:</b></p>
+    <p>@Model.ValueFirst+@Model.ValueSecond = @(@Model.ValueFirst + @Model.ValueSecond)</p>
+    <p><b>Sub:</b></p>
+    <p>@Model.ValueFirst-@Model.ValueSecond = @(@Model.ValueFirst - @Model.ValueSecond)</p>
+    <p><b>Mult:</b></p>
+    <p>@Model.ValueFirst*@Model.ValueSecond = @(@Model.ValueFirst * @Model.ValueSecond)</p>
+    <p><b>Div:</b></p>
+    <p>@Model.ValueFirst/@Model.ValueSecond = @(@Model.ValueFirst / @Model.ValueSecond)</p>
+</body>
